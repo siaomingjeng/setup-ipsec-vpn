@@ -19,6 +19,21 @@
 
 # =====================================================
 
+# For L2TP:
+# IP Protocol Type=UDP, UDP Port Number=500    <- Used by IKEv1 (IPSec control path)
+# IP Protocol Type=UDP, UDP Port Number=4500   <- Used by IKEv1 (IPSec control path)
+# IP Protocol Type=ESP (value 50)   <- Used by IPSec data path
+# For PPTP:
+# IP Protocol=TCP, TCP Port number=1723   <- Used by PPTP control path
+# IP Protocol=GRE (value 47)   <- Used by PPTP data path
+# For SSTP:
+# IP Protocol=TCP, TCP Port number=443   <- Used by SSTP control and data path
+# For IKEv2:
+# IP Protocol Type=UDP, UDP Port Number=500    <- Used by IKEv2 (IPSec control path)
+# IP Protocol Type=UDP, UDP Port Number=4500   <- Used by IKEv2 (IPSec control path)
+# IP Protocol Type=ESP (value 50)   <- Used by IPSec data path
+# =====================================================
+
 # Define your own values for these variables
 # - IPsec pre-shared key, VPN username and password
 # - All values MUST be placed inside 'single quotes'
